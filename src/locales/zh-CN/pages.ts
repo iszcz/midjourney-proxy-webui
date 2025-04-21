@@ -361,7 +361,7 @@ export default {
   'pages.setting.replicate': '换脸配置',
   'pages.setting.translate': '开启翻译',
   'pages.setting.baiduTranslate': '百度翻译',
-  'pages.setting.openai': 'GPT 翻译',
+  'pages.setting.openai': 'GPT 配置',
   'pages.setting.smtp': '邮件服务',
   'pages.setting.notifyHook': '绘画通知回调',
   'pages.setting.notifyPoolSize': '绘画通知线程',
@@ -445,6 +445,9 @@ export default {
 
   'pages.setting.enableNijiTranslate': 'NIJI 翻译',
   'pages.setting.enableNijiTranslateTips': '启用后将 Niji · journey 任务的 prompt 中文自动翻译为英文',
+
+  'pages.setting.enableAIReview': 'AI 内容审核',
+  'pages.setting.enableAIReviewTips': '启用后使用AI对提示词进行智能审核，自动修改不适当内容',
 
   'pages.setting.enableAccountSponsor': '赞助账号',
   'pages.setting.enableAccountSponsorTips': '启用后赞助商可以添加赞助账号',

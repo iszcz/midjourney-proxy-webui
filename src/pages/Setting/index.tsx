@@ -675,6 +675,16 @@ const Setting: React.FC = () => {
                 </Form.Item>
 
                 <Form.Item
+                  label={intl.formatMessage({ id: 'pages.setting.enableAIReview' })}
+                  name="enableAIReview"
+                  help={intl.formatMessage({
+                    id: 'pages.setting.enableAIReviewTips',
+                  })}
+                >
+                  <Switch />
+                </Form.Item>
+
+                <Form.Item
                   label={intl.formatMessage({ id: 'pages.setting.enableConvertNijiToMj' })}
                   name="enableConvertNijiToMj"
                   help={intl.formatMessage({

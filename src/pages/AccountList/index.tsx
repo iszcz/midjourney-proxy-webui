@@ -253,6 +253,17 @@ const AccountList: React.FC = () => {
 
   const columns = [
     {
+      title: intl.formatMessage({ id: 'pages.account.dateCreated' }),
+      dataIndex: 'dateCreated',
+      ellipsis: true,
+      width: 140,
+      sorter: true,
+      hideInSearch: true,
+      defaultSortOrder: 'descend',
+      renderText: (text: string, record: Record<string, any>) =>
+        moment(text).format('YYYY-MM-DD HH:mm'),
+    } as ColumnType<Record<string, any>>,
+    {
       title: intl.formatMessage({ id: 'pages.account.guildId' }),
       dataIndex: 'guildId',
       width: 200,
@@ -465,16 +476,6 @@ const AccountList: React.FC = () => {
       // record['properties']['disabledReason'],
     } as ColumnType<Record<string, any>>,
     {
-      title: intl.formatMessage({ id: 'pages.account.dateCreated' }),
-      dataIndex: 'dateCreated',
-      ellipsis: true,
-      width: 140,
-      sorter: true,
-      hideInSearch: true,
-      renderText: (text: string, record: Record<string, any>) =>
-        moment(text).format('YYYY-MM-DD HH:mm'),
-    } as ColumnType<Record<string, any>>,
-    {
       title: intl.formatMessage({ id: 'pages.operation' }),
       dataIndex: 'operation',
       width: 220,
@@ -614,6 +615,8 @@ const AccountList: React.FC = () => {
           }}
           rowKey="id"
           actionRef={actionRef}
+          defaultSortField="dateCreated"
+          defaultSortOrder="descend"
           toolBarRender={() => [
             <Button
               key="sponsor"

@@ -491,6 +491,9 @@ export default {
   'pages.setting.enableNijiTranslateTips':
     'Automatically translate prompt for Niji · journey tasks to Chinese when enabled',
 
+  'pages.setting.enableAIReview': 'AI Content Review',
+  'pages.setting.enableAIReviewTips': 'When enabled, use AI to intelligently review prompts and automatically modify inappropriate content',
+
   'pages.setting.enableAccountSponsor': 'Sponsor account',
   'pages.setting.enableAccountSponsorTips': 'After enabling sponsor can add sponsor account',
 
